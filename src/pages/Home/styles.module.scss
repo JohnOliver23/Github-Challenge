@@ -1,3 +1,14 @@
 .homeContainer {
-  color: black;
+  padding: 2rem 4rem;
+
+  h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 2px;
+  }
+
+  //mobile screen
+  @media all and (max-width: 769px) {
+    padding: 1rem;
+  }
 }
