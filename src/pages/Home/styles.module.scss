@@ -12,3 +12,15 @@
     padding: 1rem;
   }
 }
+
+.searchContainer {
+  padding: 2rem 0rem;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+
+  @media all and (max-width: 769px) {
+    width: 100%;
+  }
+}
