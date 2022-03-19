@@ -8,7 +8,7 @@ export const Container = styled.div<ContainerProps>`
   height: 50px;
   background: ${'var(--white)'};
   border-radius: 10px;
-  border: 1px solid ${'var(--gray-200)'};
+  border: 2px solid ${'var(--gray-200)'};
   padding: 16px;
   width: 100%;
   display: flex;
