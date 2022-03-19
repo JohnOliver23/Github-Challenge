@@ -12,3 +12,12 @@
     padding: 1rem;
   }
 }
+
+.searchContainer {
+  padding: 2rem 0rem;
+  width: 30%;
+
+  @media all and (max-width: 769px) {
+    width: 100%;
+  }
+}
