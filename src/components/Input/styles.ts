@@ -40,4 +40,7 @@ export const Container = styled.div<ContainerProps>`
     transition: stroke 0.2s;
     margin-right: 16px;
   }
+  @media all and (max-width: 769px) {
+    font-size: 14px;
+  }
 `;
