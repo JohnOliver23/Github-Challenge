@@ -1,5 +1,5 @@
 export const GITHUB_API = 'https://api.github.com/';
-export const GITHUB_TOKEN = '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';
+export const GITHUB_TOKEN = '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';
 
 export const GET_REPOSITORIES = (username: string): string => {
   return `

@@ -3,20 +3,24 @@ import Input from 'components/Input';
 import { FiSearch } from 'react-icons/fi';
 import { Button } from 'components/Button/Button';
 import { getRepositories } from 'services/api';
+import RepositoryList from 'components/RepositoryList';
+import { IRepository } from 'util/interfaces';
 import styles from './styles.module.scss';
 
 export default function Home() {
-  const [repositories, setRepositories] = useState([]);
+  const [repositories, setRepositories] = useState<IRepository[]>([]);
   const [search, setSearch] = useState('');
   const [textNotFound, setTextNotFound] = useState('Search by Username');
 
   const searchByUsername = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = await getRepositories(search);
-    if (data.data.user) {
+    if (data.data.user && data.data.user.repositories.nodes.length) {
       setRepositories(data.data.user.repositories.nodes);
     } else {
-      setTextNotFound(`Could not find to an User with the login of ${search} `);
+      setTextNotFound(
+        `Could not find repositories with the username of ${search} `,
+      );
       setRepositories([]);
     }
   };
@@ -38,7 +42,11 @@ export default function Home() {
         </Button>
       </form>
 
-      {repositories.length === 0 && <p>{textNotFound}</p>}
+      {repositories.length === 0 ? (
+        <p>{textNotFound}</p>
+      ) : (
+        <RepositoryList repositories={repositories} />
+      )}
     </div>
   );
 }

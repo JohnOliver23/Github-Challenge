@@ -1,0 +1,61 @@
+.repositoryContainer {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  padding: 1.25rem;
+  border-radius: 10px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    display: block;
+    text-transform: capitalize;
+    color: var(--black);
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .descriptionContainer {
+    height: 50px;
+    p {
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+      max-height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .detailsContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    .languageContainer {
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+
+      svg {
+        fill: var(--purple-800);
+      }
+    }
+
+    .starContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+
+      svg {
+        fill: var(--gray-500);
+      }
+    }
+  }
+}
