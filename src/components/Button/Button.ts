@@ -19,4 +19,12 @@ export const Button = styled.button<ButtonProps>`
   &:hover {
     filter: brightness(0.9);
   }
+  &:disabled {
+    background: var(--gray-500);
+    cursor: not-allowed;
+    opacity: 50%;
+    &:hover {
+      filter: none;
+    }
+  }
 `;
