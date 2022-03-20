@@ -8,7 +8,7 @@ type RepositoriesProps = {
 };
 
 function RepositoryList({ repositories }: RepositoriesProps) {
-  // transformation repositories to concat description and format date
+  // transformation repositories to concat with ... when description has more 100 character and format date
   const repositoryList = useMemo(
     () =>
       repositories.map(repository => ({
