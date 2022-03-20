@@ -42,11 +42,8 @@ export default function Home() {
         </Button>
       </form>
 
-      {repositories.length === 0 ? (
-        <p>{textNotFound}</p>
-      ) : (
-        <RepositoryList repositories={repositories} />
-      )}
+      {repositories.length === 0 && <p>{textNotFound}</p>}
+      <RepositoryList repositories={repositories} />
     </div>
   );
 }

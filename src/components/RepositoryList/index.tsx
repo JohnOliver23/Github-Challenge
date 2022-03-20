@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { IRepository } from 'util/interfaces';
-import { RepositoryItem } from 'components/RepositoryItem';
+import RepositoryItem from 'components/RepositoryItem';
 import styles from './styles.module.scss';
 
 type RepositoriesProps = {
@@ -8,11 +8,15 @@ type RepositoriesProps = {
 };
 
 function RepositoryList({ repositories }: RepositoriesProps) {
-  // transformation repositories to concat description
+  // transformation repositories to concat description and format date
   const repositoryList = useMemo(
     () =>
       repositories.map(repository => ({
         ...repository,
+        createdAt: new Intl.DateTimeFormat('en-US', {
+          year: 'numeric',
+          month: 'short',
+        }).format(new Date(repository.createdAt)),
         description:
           repository.description && repository.description.length > 100
             ? repository.description.substr(0, 100).concat('...')
@@ -24,7 +28,7 @@ function RepositoryList({ repositories }: RepositoriesProps) {
   return (
     <div className={styles.repositoriesContainer}>
       {repositoryList.map(repository => (
-        <RepositoryItem repository={repository} />
+        <RepositoryItem key={repository.id} repository={repository} />
       ))}
     </div>
   );
