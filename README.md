@@ -5,12 +5,24 @@ This is a test for a Front-End Engineer position at Docker. The test consists of
 ## Publish domain
 https://dock-challenge.herokuapp.com/
 
+obs. before running the project, if you not have github personal access token,  it's necessary to generate a **personal access token** in the github
+
+## Generate Personal Access Code
+1. access your github profile
+2. go to **settings**
+3. go to **Developer Settings**
+4. go to **Personal access token**
+5. click in **Generate new token**
+6. create the name token with any expiration date
+7. select all scopes
+8. generate and copy the token
+
 ## Run the project
 1. git clone https://github.com/JohnOliver23/Github-Challenge.git
 2. cd Github-Challenge/
 3. yarn install
 4. open the file **.env** (if you are in linux environment, you can open with the comand : **gedit .env**)
-5. change the line that contains **REACT_APP_GITHUB_TOKEN=xxxxx-xxxxx-xxxxxx-xxxx** for **REACT_APP_GITHUB_TOKEN=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**
+5. change the line that contains **REACT_APP_GITHUB_TOKEN=xxxxx-xxxxx-xxxxxx-xxxx** for **REACT_APP_GITHUB_TOKEN= (your personal access token)**
 7. yarn start
 
 ## Run the tests
@@ -40,7 +52,7 @@ https://dock-challenge.herokuapp.com/
 - User can search repositories filtering by username
 - the screen with username searched
 
-#### Desktop without search
+#### Desktop
 ![Desktop2](https://github.com/JohnOliver23/Github-Challenge/blob/main/images/desktop2.png?raw=true)
 
 #### Mobile
