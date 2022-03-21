@@ -15,12 +15,13 @@
 
 .searchContainer {
   padding: 2rem 0rem;
-  width: 40%;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   justify-content: center;
   gap: 6px;
 
   @media all and (max-width: 769px) {
-    width: 100%;
+    max-width: 100%;
   }
 }

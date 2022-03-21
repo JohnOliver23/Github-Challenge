@@ -1,0 +1,15 @@
+.repositoriesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 1rem;
+
+  @media all and (max-width: 1400px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  //mobile screen
+  @media all and (max-width: 769px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

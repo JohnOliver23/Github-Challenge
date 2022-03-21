@@ -1,0 +1,84 @@
+.repositoryContainer {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  padding: 1.25rem;
+  border-radius: 10px;
+  position: relative;
+  max-width: 700px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: var(--black);
+    }
+  }
+
+  .title {
+    display: block;
+    text-transform: capitalize;
+    color: var(--black);
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .descriptionContainer {
+    height: 50px;
+    p {
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+      max-height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .detailsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 6px;
+    font-size: 0.85rem;
+
+    .languageContainer {
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+
+      svg {
+        fill: var(--purple-800);
+      }
+    }
+
+    .starContainer {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+
+      svg {
+        fill: var(--gray-500);
+      }
+    }
+    .forkCountContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+    }
+  }
+}
