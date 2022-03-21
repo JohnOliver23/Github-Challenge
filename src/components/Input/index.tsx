@@ -25,7 +25,7 @@ function Input({ icon: Icon, ...rest }: InputProps) {
   }, []);
 
   return (
-    <Container isFocused={isFocused}>
+    <Container data-testid="input-container" isFocused={isFocused}>
       {Icon && <Icon size={20} />}
       <input
         onFocus={handleInputFocus}
