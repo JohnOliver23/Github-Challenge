@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Github-Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a test for a Front-End Engineer position at Docker. The test consists of creating an interface that allows a user to do a search by username and return basic information, as well as a list of repositories as in Github referring to that username.
 
-## Available Scripts
+## Publish domain
+https://dock-challenge.herokuapp.com/
 
-In the project directory, you can run:
+## Run the project
+1. git clone https://github.com/JohnOliver23/Github-Challenge.git
+2. cd Github-Challenge/
+3. yarn install
+4. open the file **.env** (if you are in linux environment, you can open with the comand : **gedit .env**)
+5. change the line that contains **REACT_APP_GITHUB_TOKEN=xxxxx-xxxxx-xxxxxx-xxxx** for **REACT_APP_GITHUB_TOKEN=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**
+7. yarn start
 
-### `yarn start`
+## Run the tests
+1. cd Github-Challenge/
+2. yarn test
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Run the tests report
+1. yarn test:coverage
+![tests](https://github.com/JohnOliver23/Github-Challenge/blob/main/images/tests.png?raw=true)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+# Pages
+### Home, Without Username Searched 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- User can search repositories filtering by username
+- the screen without username searched
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Desktop
+![Desktop1](https://github.com/JohnOliver23/Github-Challenge/blob/main/images/desktop1.png?raw=true)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Mobile
+![Mobile1](https://github.com/JohnOliver23/Github-Challenge/blob/main/images/mobile1.png?raw=true)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Home, With Username Searched 
 
-### `yarn eject`
+- User can search repositories filtering by username
+- the screen with username searched
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Desktop without search
+![Desktop2](https://github.com/JohnOliver23/Github-Challenge/blob/main/images/desktop2.png?raw=true)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Mobile
+![Mobile2](https://github.com/JohnOliver23/Github-Challenge/blob/main/images/mobile2.png?raw=true)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technologies:
+- Typescript
+- HTML
+- CSS
+- GraphQL
 
-## Learn More
+### React FC with hooks
+- useState  for state control
+- useMemo to memorize calculated values
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Libraries
+- Styled components
+- SASS
+- Axios
+- React Router DOM
+- React-Icons
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
