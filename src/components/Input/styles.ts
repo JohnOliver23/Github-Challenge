@@ -21,6 +21,7 @@ export const Container = styled.div<ContainerProps>`
     props.isFocused &&
     `
       border-color: var(--purple-500);
+      color: #333;
       svg {
         stroke: var(--purple-500);
       }
