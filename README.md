@@ -22,7 +22,7 @@ obs. before running the project, if you not have github personal access token,  
 2. cd Github-Challenge/
 3. yarn install
 4. open the file **.env** (if you are in linux environment, you can open with the comand : **gedit .env**)
-5. change the line that contains **REACT_APP_GITHUB_TOKEN=xxxxx-xxxxx-xxxxxx-xxxx** for **REACT_APP_GITHUB_TOKEN= (your personal access token)**
+5. change the line that contains **REACT_APP_GITHUB_TOKEN=xxxxx-xxxxx-xxxxxx-xxxx** for **REACT_APP_GITHUB_TOKEN=your personal access token**
 7. yarn start
 
 ## Run the tests
